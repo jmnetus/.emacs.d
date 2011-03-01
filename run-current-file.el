@@ -17,6 +17,7 @@ File suffix is used to determine what program to run."
             ("ml" . "ocaml")
             ("vbs" . "cscript")
             ("java" . "javac")
+	    ("tex" . "pdflatex")
             )
           )
     (setq fname (buffer-file-name))

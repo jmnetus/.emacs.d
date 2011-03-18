@@ -1,9 +1,15 @@
 ; first file to be loaded.
-(setq backup-inhibited t)
-(add-to-list 'load-path "~/.emacs.d/")
-(load-file "~/.emacs.d/indent-options.el")
-(load-file "~/.emacs.d/run-current-file.el")
 
+; add .emacs.d to load-path
+(add-to-list 'load-path "~/.emacs.d/")
+
+; disable menu bar
+(menu-bar-mode 0)
+
+; load color themes
 (require 'color-theme)
 (color-theme-initialize)
-(color-theme-arjen)
+(color-theme-comidia)
+
+(load-file "~/.emacs.d/indent-options.el")
+(load-file "~/.emacs.d/run-current-file.el")

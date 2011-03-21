@@ -11,5 +11,9 @@
 (color-theme-initialize)
 (color-theme-comidia)
 
+; syntax highlighting on (for older emacs versions)
+(global-font-lock-mode 1)
+
+; load other files
 (load-file "~/.emacs.d/indent-options.el")
 (load-file "~/.emacs.d/run-current-file.el")

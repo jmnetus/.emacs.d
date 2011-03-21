@@ -1,0 +1,3 @@
+; .emacs file to copy to home directory for old versions of emacs
+
+(load-file "~/.emacs.d/init.el")

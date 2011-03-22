@@ -17,6 +17,11 @@
 ; syntax highlighting on (for older emacs versions)
 (global-font-lock-mode 1)
 
+; indentation options
+(setq-default indent-tabs-mode nil)
+(setq-default c-indent-level 2)
+(setq-default js-indent-level 2)
+
 ; load other files
-(load-file "~/.emacs.d/indent-options.el")
+; routine to compile or run when F7 is pressed
 (load-file "~/.emacs.d/run-current-file.el")

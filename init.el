@@ -1,7 +1,7 @@
 ; first file to be loaded.
 
 ; disable backup ~ files
-(setq backup-inhibited t)
+(setq-default backup-inhibited t)
 
 ; add .emacs.d to load-path
 (add-to-list 'load-path "~/.emacs.d/")

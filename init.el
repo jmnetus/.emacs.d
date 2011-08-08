@@ -25,3 +25,6 @@
 ; load other files
 ; routine to compile or run when F7 is pressed
 (load-file "~/.emacs.d/run-current-file.el")
+
+; enable ctrl+pgdn for horizontal scrolling
+(put 'scroll-left 'disabled nil)

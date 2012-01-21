@@ -9,6 +9,10 @@
 ; disable menu bar
 (menu-bar-mode 0)
 
+; load custom modes
+(autoload 'markdown-mode "markdown-mode.el")
+(setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
+
 ; load color themes
 (require 'color-theme)
 (color-theme-initialize)

@@ -10,7 +10,7 @@
 (menu-bar-mode 0)
 
 ; load custom modes
-(autoload 'markdown-mode "markdown-mode.el")
+(autoload 'markdown-mode "~/.emacs.d/markdown-mode.el")
 (setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
 
 ; load color themes

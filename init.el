@@ -1,16 +1,19 @@
 ; first file to be loaded.
 
+; disable vc backends that are crashing some emacs versions - I use commandline anyway
+(setq vc-handled-backends ())
+
 ; disable backup ~ files
 (setq-default backup-inhibited t)
 
 ; add .emacs.d to load-path
-(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/lisp")
 
 ; disable menu bar
 (menu-bar-mode 0)
 
 ; load custom modes
-(autoload 'markdown-mode "~/.emacs.d/markdown-mode.el")
+(autoload 'markdown-mode "~/.emacs.d/lisp/markdown-mode.el")
 (setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
 
 ; load color themes
@@ -28,7 +31,7 @@
 
 ; load other files
 ; routine to compile or run when F7 is pressed
-(load-file "~/.emacs.d/run-current-file.el")
+(load-file "~/.emacs.d/lisp/run-current-file.el")
 
 ; enable ctrl+pgdn for horizontal scrolling
 (put 'scroll-left 'disabled nil)

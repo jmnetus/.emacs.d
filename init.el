@@ -13,8 +13,13 @@
 (menu-bar-mode 0)
 
 ; load custom modes
-(autoload 'markdown-mode "~/.emacs.d/lisp/markdown-mode.el")
+(autoload 'csharp-mode "~/.emacs.d/lisp/modes/csharp-mode.el")
+(autoload 'markdown-mode "~/.emacs.d/lisp/modes/markdown-mode.el")
+(autoload 'yaml-mode "~/.emacs.d/lisp/modes/yaml-mode.el")
+(setq auto-mode-alist (cons '("\\.cs" . csharp-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.yaml" . yaml-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.yml" . yaml-mode) auto-mode-alist))
 
 ; load color themes
 (require 'color-theme)
